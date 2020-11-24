@@ -13,11 +13,11 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'MEOWCRAFT BOT'; 
-const instagram = 'https://instagram.com/meowcraft_'; 
-const telegram = 't.me/MeowCraftG'; 
+const BotName = 'Funky X'; 
+const instagram = 'https://instagram.com/ini.pfff'; 
+const telegram = 'hmmm'; 
 const kapanbotaktif = 'KETIKA OWNER GABUT'; 
-const youtube = 'https://youtube.com/meowcraft';
+const youtube = 'hmm';
 //const grupch1 = 'belum ada grup'; 
 //const grupch2 = 'belum ada grup' ; 
 const
@@ -64,11 +64,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@reuz.id')
+conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by AING TLOL [PFFF]')
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@reuz.id`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by AING TLOL [PFFF]`)
 })
 
 conn.on('message-new', async(m) =>
@@ -661,7 +661,7 @@ if (text.includes('!nulis')){
       imageToBase64(res.data.result)
         .then(
           (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar', MessageType.text)
+            conn.sendMessage(id, 'Tunggu Yee Anjay🤩😴', MessageType.text)
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image)
         })
